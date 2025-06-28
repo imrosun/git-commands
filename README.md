@@ -131,3 +131,9 @@ to remove remote origin
 ```bash
 git remote remove origin
 ```
+
+to remove previous commit / undo commit 
+To create a new commit that reverts the last commit  
+```bash
+git revert HEAD
+```
