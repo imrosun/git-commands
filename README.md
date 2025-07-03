@@ -13,7 +13,7 @@ attach message to added file
 git commit -m "add message"
 ```
 
-switch to main branch
+to create and switch to main branch
 ```bash
 git branch branch_name
 git checkout main
@@ -54,6 +54,13 @@ to remove previous commit / undo commit
 To create a new commit that reverts the last commit  
 ```bash
 git revert HEAD
+```
+
+to add upstream (add branch on forked_url from origin_url)
+```bash
+git add upstream origin original_url
+git fetch upstream
+git branch -b branch_name origin/branch_new_name
 ```
 
 ---------------------------------------------------
