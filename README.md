@@ -1,3 +1,62 @@
+To initialize a project 
+```bash
+git init
+```
+
+To add file
+```bash
+git add . or git add <filename>
+```
+
+attach message to added file
+```bash
+git commit -m "add message"
+```
+
+switch to main branch
+```bash
+git branch branch_name
+git checkout main
+```
+
+add github repository
+```bash
+git remote add origin https://github.com/imrosun/git-commands.git
+git remote add origin https://github-token@github.com/imrosun/git-commands.git
+```
+
+push code to main branch
+```bash
+git push origin main
+```
+
+to pull recent updated codes
+```bash
+git pull origin main
+```
+
+to manege/see conflicts
+```bash
+git pull origin main --allow-unrelated-histories
+```
+
+to check the status of added files
+```bash
+git status
+```
+
+to remove remote origin 
+```bash
+git remote remove origin
+```
+
+to remove previous commit / undo commit 
+To create a new commit that reverts the last commit  
+```bash
+git revert HEAD
+```
+
+---------------------------------------------------
 # git-commands
 
 ## Having multiple Github accounts
@@ -77,63 +136,4 @@ We then add a new SSH key. We’ll called the key “personal” and we then pas
 
 Now log out of the Github account and repeat this process in your work Github account, only this time using the public key from “work.pub”
 
-All set just add git config user.email and user.name and start pushing. 
-
----------------------------------------------------
-
-To initialize a project 
-```bash
-git init
-```
-
-To add file
-```bash
-git add . or git add <filename>
-```
-
-attach message to added file
-```bash
-git commit -m "add message"
-```
-
-switch to main branch
-```bash
-git checkout main
-```
-
-add github repository
-```bash
-git remote add origin https://github.com/imrosun/git-commands.git
-git remote add origin https://github-token@github.com/imrosun/git-commands.git
-```
-
-push code to main branch
-```bash
-git push origin main
-```
-
-to pull recent updated codes
-```bash
-git pull origin main
-```
-
-to manege/see conflicts
-```bash
-git pull origin main --allow-unrelated-histories
-```
-
-to check the status of added files
-```bash
-git status
-```
-
-to remove remote origin 
-```bash
-git remote remove origin
-```
-
-to remove previous commit / undo commit 
-To create a new commit that reverts the last commit  
-```bash
-git revert HEAD
-```
+All set just add git config user.email and user.name and start pushing.
